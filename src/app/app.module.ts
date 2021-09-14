@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
 
@@ -18,6 +19,7 @@ import { AboutComponent } from './pages/about/about.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     AmplifyUIAngularModule
   ],
   providers: [],
