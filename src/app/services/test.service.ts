@@ -13,7 +13,8 @@ export default class ResponseModel {
 })
 export class TestService {
 
-  SERVICE_URL: string = 'https://vu3cpov8r3.execute-api.us-east-2.amazonaws.com/desarrollo';
+  // SERVICE_URL: string = 'https://vu3cpov8r3.execute-api.us-east-2.amazonaws.com/desarrollo';
+  SERVICE_URL: string = 'https://yacop2d062.execute-api.us-east-2.amazonaws.com/Stage/api/categories';
 
   constructor(private httpClient: HttpClient) { }
 
