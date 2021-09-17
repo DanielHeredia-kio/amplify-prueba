@@ -22,7 +22,7 @@ export class TestService {
 
   greet(): Observable<ResponseModel> {
     // console.log(environment.apiUrl);
-    return this.httpClient.get<ResponseModel>(this.APIURL);
+    return this.httpClient.get<ResponseModel>(`${this.APIURL}/categories`);
   }
 
 }
