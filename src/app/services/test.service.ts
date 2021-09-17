@@ -15,13 +15,14 @@ export default class ResponseModel {
 })
 export class TestService {
 
-  SERVICE_URL: string = 'https://yacop2d062.execute-api.us-east-2.amazonaws.com/Stage/api/categories';
+  // SERVICE_URL: string = 'https://yacop2d062.execute-api.us-east-2.amazonaws.com/Stage/api/categories';
+  APIURL: string = environment.apiUrl; 
 
   constructor(private httpClient: HttpClient) { }
 
   greet(): Observable<ResponseModel> {
-    console.log(environment.apiUrl);
-    return this.httpClient.get<ResponseModel>(this.SERVICE_URL);
+    // console.log(environment.apiUrl);
+    return this.httpClient.get<ResponseModel>(this.APIURL);
   }
 
 }
